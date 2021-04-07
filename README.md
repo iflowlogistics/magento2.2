@@ -1,4 +1,4 @@
-# Módulo de envíos ANDREANI 2.2
+# Módulo de envíos iFlow 2.2
 
 ## Requisitos
 
