@@ -1,4 +1,4 @@
-# Módulo de envíos iFlow 2.3 (Compatible con Andreani)
+# Módulo de envíos iFlow 2.3 (Compatible con Carriers)
 
 ## Requisitos
 
