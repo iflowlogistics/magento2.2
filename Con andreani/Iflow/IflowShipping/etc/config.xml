@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Magento/Store/etc/config.xsd">
+   <default>
+       <carriers>
+           <iflow>
+                <active>0</active>
+                <model>Iflow\IflowShipping\Model\Carrier</model>
+                <title>iFlow</title>
+                <name>iFlow Shipping</name>
+                <store_id backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <softlightpassword backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <sandbox_mode>1</sandbox_mode>
+                <production_webservices_url><![CDATA[https://api.balloongroupiflow.com/]]></production_webservices_url>
+                <sandbox_webservices_url><![CDATA[https://api.balloongroupiflow.com/]]></sandbox_webservices_url>
+                <price>1</price>
+                <sallowspecific>0</sallowspecific>
+                <specificerrmsg>This shipping method is not available. Please contact us, to use this method.</specificerrmsg>
+                <is_online>1</is_online>
+           </iflow>
+       </carriers>
+   </default>
+</config>

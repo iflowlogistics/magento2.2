@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Config\Model\Config\TypePool">
+        <arguments>
+            <argument name="sensitive" xsi:type="array">
+                <item name="carriers/iflow/store_id" xsi:type="string">1</item>
+                <item name="carriers/iflow/production_webservices_url" xsi:type="string">1</item>
+                <item name="carriers/iflow/sandbox_webservices_url" xsi:type="string">1</item>
+            </argument>
+            <argument name="environment" xsi:type="array">
+                <item name="carriers/iflow/sandbox_mode" xsi:type="string">1</item>
+            </argument>
+        </arguments>
+    </type>
+    <preference for="Magento\Shipping\Model\Shipping\LabelGenerator" type="Iflow\IflowShipping\Model\Shipping\LabelGenerator" />
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="iflow_iflowshipping_order_listing_data_source" xsi:type="string">Magento\Sales\Model\ResourceModel\Order\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <plugin name="iflow_iflowshipping_sales_order_filters" type="Iflow\IflowShipping\Plugin\Adminhtml\Order\FilterGridCollection" sortOrder="100"/>
+    </type>
+</config>
