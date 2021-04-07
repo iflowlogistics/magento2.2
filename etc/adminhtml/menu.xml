@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author iflowNet Team
+ * @copyright Copyright (c) 2020 iflowNet
+ * @package Iflow_IflowShipping
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Iflow_IflowShipping::iflow_operations"
+             title="Iflow Shipping"
+             module="Iflow_IflowShipping"
+             sortOrder="110"
+             parent="Magento_Sales::sales"
+             resource="Iflow_IflowShipping::iflow_operations"/>
+        <add id="Iflow_IflowShipping::iflow_operations_list"
+             title="Generación masiva de envíos"
+             module="Iflow_IflowShipping"
+             sortOrder="10"
+             parent="Iflow_IflowShipping::iflow_operations"
+             action="iflow_iflowshipping/order/index"
+             resource="Iflow_IflowShipping::iflow_operations_list"/>
+    </menu>
+</config>
