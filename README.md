@@ -1,11 +1,11 @@
-# Módulo de envíos iFlow 2.2 y 2.3
+# Módulo de envíos iFlow 2.2 
 
 ## Requisitos
 
 Para el correcto funcionamiento del módulo es necesario contar con:
 
 ```
-Magento version >= 2.2 y < 2.4
+Magento version >= 2.2 
 ```
   
 ## Instalación
